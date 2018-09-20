@@ -1,0 +1,59 @@
+* {
+  boder: 0;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #F3D9B1; }
+
+.container > * {
+  position: absolute; }
+
+.container {
+  margin: auto;
+  top: 10rem;
+  left: 0;
+  bottom: 0;
+  width: 16.67rem;
+  height: 16.67rem; }
+
+.bun {
+  width: 15rem;
+  height: 5rem;
+  background: #DF7B30;
+  border-radius: 8.33rem 8.33rem 0 0;
+  margin-top: 4rem;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%);
+  background-size: 80px 35px;
+  background-position: -20px 2px, 5px -3px, -10px 20px, 35px -10px, 65px 2px, 100px -5px, 120px 15px;
+  background-repeat: no-repeat; }
+
+.face {
+  z-index: 900;
+  width: 10px;
+  height: 10px;
+  margin-top: 6rem;
+  margin-left: 5.5rem;
+  background: #333;
+  border-radius: 100%; }
+  .face:before, .face:after {
+    content: '';
+    position: absolute;
+    background-color: #333; }
+  .face:before {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 3rem; }
+  .face:after {
+    height: 10px;
+    width: 10px;
+    background: none;
+    border: .2rem solid;
+    transform: rotate(-40deg);
+    margin-top: 1rem;
+    margin-left: 1.4rem;
+    border-radius: 100%;
+    border-color: transparent transparent #333 #333; }
+
+/*# sourceMappingURL=style.css.map */
