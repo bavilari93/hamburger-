@@ -23,7 +23,6 @@ body {
 
 .bun {
     $seed: radial-gradient(rgba(255, 255, 255, 0.7)7%, transparent 9%);
-
     width: 15rem;
     height: 5rem;
     background: #DF7B30;
@@ -60,7 +59,7 @@ body {
         width: 10px;
         background: none;
         border: .2rem solid;
-        transform: rotate( -40deg);
+        transform: rotate( -45deg);
         margin: {
             top: 1rem;
             left: 1.4rem;
@@ -71,3 +70,43 @@ body {
         }
     }
 }
+
+.tomato {
+    background-color: #E83330;
+    border-radius: 100px;
+    width: 14rem;
+    height: 1rem;
+    margin: {
+        left: .7rem;
+        top: .3rem;
+    }
+}
+
+$fillGradient: radial-gradient(circle, rgba(255, 255, 255, 0.7)1%, #9E3D6D 30%);
+
+.onion {
+    background-color: #9E3D6D;
+    width: 14.2rem;
+    height: 1rem;
+    margin: {
+        left: .5rem;
+        top: .4rem;
+    }
+    background: $fillGradient,
+    $fillGradient;
+    background-position: 1rem,
+    1rem;
+    background-size: 90px 2rem;
+}
+
+.lettuce {
+    margin:{
+    	top: .4rem; 
+    	left: .6rem;{}
+    }
+    width: 14rem;
+    height: 1rem;
+    background: #6DA000;
+    border-radius: 3px;
+}
+.cheese

@@ -1,59 +1,55 @@
-* {
-  boder: 0;
-  padding: 0;
-  margin: 0; }
+/*
+Error: Invalid CSS after "    	left: .6rem;": expected "}", was "{}"
+        on line 105 of style.scss
 
-body {
-  background-color: #F3D9B1; }
+100: }
+101: 
+102: .lettuce {
+103:     margin:{
+104:     	top: .4rem; 
+105:     	left: .6rem;{}
+106:     }
+107:     width: 14rem;
+108:     height: 1rem;
+109:     background: #6DA000;
+110:     border-radius: 3px;
 
-.container > * {
-  position: absolute; }
-
-.container {
-  margin: auto;
-  top: 10rem;
-  left: 0;
-  bottom: 0;
-  width: 16.67rem;
-  height: 16.67rem; }
-
-.bun {
-  width: 15rem;
-  height: 5rem;
-  background: #DF7B30;
-  border-radius: 8.33rem 8.33rem 0 0;
-  margin-top: 4rem;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%), radial-gradient(rgba(255, 255, 255, 0.7) 7%, transparent 9%);
-  background-size: 80px 35px;
-  background-position: -20px 2px, 5px -3px, -10px 20px, 35px -10px, 65px 2px, 100px -5px, 120px 15px;
-  background-repeat: no-repeat; }
-
-.face {
-  z-index: 900;
-  width: 10px;
-  height: 10px;
-  margin-top: 6rem;
-  margin-left: 5.5rem;
-  background: #333;
-  border-radius: 100%; }
-  .face:before, .face:after {
-    content: '';
-    position: absolute;
-    background-color: #333; }
-  .face:before {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin-left: 3rem; }
-  .face:after {
-    height: 10px;
-    width: 10px;
-    background: none;
-    border: .2rem solid;
-    transform: rotate(-40deg);
-    margin-top: 1rem;
-    margin-left: 1.4rem;
-    border-radius: 100%;
-    border-color: transparent transparent #333 #333; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:105
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:679:in `block'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:993:in `nested_properties!'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:829:in `try_declaration'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:686:in `block_contents'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/frank/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    	left: .6rem;\": expected \"}\", was \"{}\"\A         on line 105 of style.scss\A \A 100: }\A 101: \A 102: .lettuce {\A 103:     margin:{\A 104:     	top: .4rem; \A 105:     	left: .6rem;{}\A 106:     }\A 107:     width: 14rem;\A 108:     height: 1rem;\A 109:     background: #6DA000;\A 110:     border-radius: 3px;"; }
