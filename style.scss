@@ -1,4 +1,4 @@
-* {
+    * {
     boder: 0;
     padding: 0;
     margin: 0;
@@ -82,14 +82,14 @@ body {
     }
 }
 
-$fillGradient: radial-gradient(circle, rgba(255, 255, 255, 0.7)1%, #9E3D6D 30%);
+$fillGradient: radial-gradient(circle, rgba(255, 255, 255, 1)1%, #9E3D6D 30%);
 
 .onion {
     background-color: #9E3D6D;
-    width: 14.2rem;
+    width: 13.5rem;
     height: 1rem;
     margin: {
-        left: .5rem;
+        left: .9rem;
         top: .4rem;
     }
     background: $fillGradient,
@@ -100,13 +100,71 @@ $fillGradient: radial-gradient(circle, rgba(255, 255, 255, 0.7)1%, #9E3D6D 30%);
 }
 
 .lettuce {
-    margin:{
-    	top: .4rem; 
-    	left: .6rem;{}
+    margin: {
+        top: .4rem;
+        left: .6rem;
     }
     width: 14rem;
     height: 1rem;
     background: #6DA000;
     border-radius: 3px;
 }
-.cheese
+
+.cheese {
+    $cheese: #FFB400;
+    $cheeseBorder: 50px solid transparent;
+    background: $cheese;
+    height: 1rem;
+    width: 14rem;
+    margin: {
+        left: .5rem;
+        top: .3rem;
+    }
+    border-radius: 3px;
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+    }
+    &:before {
+        z-index: 120;
+        margin-left: 7rem;
+        border: {
+            left: $cheeseBorder;
+            right: $cheeseBorder;
+            top: 60px solid $cheese;
+        }
+    }
+        &:after {
+        	margin: {
+        		top: .7rem;
+        		left: 9rem;
+        	}
+            z-index: 120;
+            width: 5px;
+            height: 35px;
+            background: #FFF;
+            opacity: 0.5;
+            border-radius: 100px;
+            transform: rotate(-40deg);
+        }
+    }
+
+.ham {
+margin-top: 14.8rem;
+margin-left: .4rem;
+  width: 14rem;
+  height: 25px;
+  background: #9D4845;
+  border-radius: 100px;
+  box-shadow: inset -5px -5px 5px rgba(68, 68, 68, 0.3);
+}
+
+.bun2 {
+  top: 16.9rem;
+  margin-left: 1rem;
+  width: 13rem;
+  height: 30px;
+  background: #DF7B30;
+  border-radius: 0 0 100px 100px;
+}
